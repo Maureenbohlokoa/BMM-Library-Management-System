@@ -1,0 +1,226 @@
+
+.register-page {
+    min-height: 100vh;
+    padding: 75px 7%;
+    background: linear-gradient(125deg, #fff0f6, #edf8ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-container {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    align-items: center;
+    gap: 75px;
+}
+
+.register-intro {
+    max-width: 520px;
+}
+
+.register-label {
+    color: #d83c83;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 22px;
+}
+
+.register-intro h1 {
+    color: #292333;
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.15;
+    font-weight: 800;
+    margin-bottom: 22px;
+}
+
+.register-intro h1 span {
+    display: block;
+    color: #d83c83;
+}
+
+.register-intro > p:not(.register-label) {
+    color: #77717e;
+    font-size: 15px;
+    line-height: 1.9;
+    max-width: 470px;
+}
+
+.register-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 38px;
+}
+
+.register-benefits > div {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.register-benefits span {
+    width: 43px;
+    height: 43px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: #ffffff;
+    color: #d83c83;
+    font-size: 13px;
+    font-weight: 800;
+    box-shadow: 0 5px 15px rgba(80, 45, 70, 0.06);
+}
+
+.register-benefits p {
+    color: #514958;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.register-form-card {
+    width: 100%;
+    max-width: 480px;
+    justify-self: end;
+    padding: 42px;
+    background: #ffffff;
+    border: 1px solid #f3e4ed;
+    border-radius: 20px;
+    box-shadow: 0 20px 55px rgba(80, 45, 70, 0.09);
+}
+
+.register-form-heading {
+    margin-bottom: 30px;
+}
+
+.register-form-heading h2 {
+    color: #292333;
+    font-size: 27px;
+    font-weight: 800;
+    margin-bottom: 9px;
+}
+
+.register-form-heading p {
+    color: #88818e;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.register-field {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.register-field label {
+    color: #514958;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.register-field input {
+    width: 100%;
+    height: 49px;
+    padding: 0 15px;
+    border: 1px solid #eadfe7;
+    border-radius: 8px;
+    outline: none;
+    background: #ffffff;
+    color: #292333;
+    font-family: inherit;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+
+.register-field input::placeholder {
+    color: #aaa3ae;
+}
+
+.register-field input:focus {
+    border-color: #d83c83;
+    box-shadow: 0 0 0 3px rgba(216, 60, 131, 0.09);
+}
+
+.register-submit {
+    width: 100%;
+    min-height: 51px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 8px;
+    background: #d83c83;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.register-submit:hover {
+    background: #b92369;
+    transform: translateY(-2px);
+}
+
+.register-login {
+    margin-top: 25px;
+    color: #88818e;
+    text-align: center;
+    font-size: 13px;
+}
+
+.register-login a {
+    color: #d83c83;
+    font-weight: 700;
+}
+
+.register-login a:hover {
+    color: #b92369;
+}
+
+@media (max-width: 900px) {
+    .register-container {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .register-intro {
+        max-width: 650px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .register-benefits {
+        max-width: 390px;
+        margin: 30px auto 0;
+        text-align: left;
+    }
+
+    .register-form-card {
+        justify-self: center;
+    }
+}
+
+@media (max-width: 550px) {
+    .register-page {
+        padding: 50px 6%;
+    }
+
+    .register-form-card {
+        padding: 28px 22px;
+    }
+
+    .register-intro h1 {
+        font-size: 37px;
+    }
+}

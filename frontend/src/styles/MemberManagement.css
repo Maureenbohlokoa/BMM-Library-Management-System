@@ -1,0 +1,378 @@
+
+.member-management {
+    min-height: 100vh;
+    padding: 65px 8%;
+    background: #ffffff;
+}
+
+.member-management-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.member-management-label {
+    color: #d83c83;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    margin-bottom: 13px;
+}
+
+.member-management-heading h1 {
+    color: #292333;
+    font-size: clamp(32px, 4vw, 43px);
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.member-management-heading h1 span {
+    color: #d83c83;
+}
+
+.member-management-heading > div > p:last-child {
+    color: #77717e;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.add-member-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 15px 22px;
+    border: none;
+    border-radius: 8px;
+    background: #d83c83;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+    white-space: nowrap;
+}
+
+.add-member-button:hover {
+    background: #b92369;
+    transform: translateY(-2px);
+}
+
+.member-form-section {
+    padding: 30px;
+    margin-bottom: 35px;
+    border: 1px solid #f1e6ed;
+    border-radius: 16px;
+    background: linear-gradient(120deg, #fff8fb, #f3faff);
+}
+
+.member-form-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.member-form-heading h2 {
+    color: #292333;
+    font-size: 21px;
+}
+
+.member-form-heading button {
+    padding: 9px 15px;
+    border: 1px solid #f0c9dc;
+    border-radius: 7px;
+    background: #ffffff;
+    color: #d83c83;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.member-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.member-form-grid label {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    color: #494250;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.member-form-grid input {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #eadfe7;
+    border-radius: 8px;
+    outline: none;
+    background: #ffffff;
+    color: #292333;
+    font-family: inherit;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+
+.member-form-grid input:focus {
+    border-color: #d83c83;
+    box-shadow: 0 0 0 3px rgba(216, 60, 131, 0.08);
+}
+
+.member-form-grid input::placeholder {
+    color: #aaa3ae;
+}
+
+.member-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.cancel-member-button,
+.save-member-button {
+    padding: 13px 22px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.cancel-member-button {
+    border: 1px solid #e8dce5;
+    background: #ffffff;
+    color: #77717e;
+}
+
+.cancel-member-button:hover {
+    background: #fff0f6;
+}
+
+.save-member-button {
+    border: 1px solid #d83c83;
+    background: #d83c83;
+    color: #ffffff;
+}
+
+.save-member-button:hover {
+    border-color: #b92369;
+    background: #b92369;
+}
+
+.member-list-section {
+    padding: 30px;
+    border: 1px solid #f1e6ed;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 8px 25px rgba(80, 45, 70, 0.04);
+}
+
+.member-list-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.member-list-heading h2 {
+    color: #292333;
+    font-size: 21px;
+    margin-bottom: 7px;
+}
+
+.member-list-heading > div:first-child p {
+    color: #88818e;
+    font-size: 12px;
+}
+
+.member-search {
+    width: 270px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    border: 1px solid #eadfe7;
+    border-radius: 8px;
+    color: #d83c83;
+}
+
+.member-search input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #292333;
+    font-family: inherit;
+    font-size: 12px;
+}
+
+.member-search input::placeholder {
+    color: #aaa3ae;
+}
+
+.member-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.member-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.member-table th {
+    padding: 16px 13px;
+    background: #fff0f6;
+    color: #8e3764;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.member-table th:first-child {
+    border-radius: 8px 0 0 8px;
+}
+
+.member-table th:last-child {
+    border-radius: 0 8px 8px 0;
+}
+
+.member-table td {
+    padding: 17px 13px;
+    border-bottom: 1px solid #f3edf1;
+    color: #655e6b;
+    font-size: 12px;
+}
+
+.member-table tbody tr:hover {
+    background: #fffafd;
+}
+
+.member-table td:first-child {
+    color: #292333;
+    font-weight: 700;
+}
+
+.membership-badge {
+    display: inline-block;
+    padding: 7px 11px;
+    border-radius: 6px;
+    background: #edf8ff;
+    color: #3696c4;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.member-actions {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.edit-member-button,
+.delete-member-button {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.edit-member-button {
+    background: #edf8ff;
+    color: #3696c4;
+}
+
+.edit-member-button:hover {
+    background: #d8efff;
+}
+
+.delete-member-button {
+    background: #fff0f6;
+    color: #d83c83;
+}
+
+.delete-member-button:hover {
+    background: #fbd8e9;
+}
+
+.member-table .empty-members {
+    height: 220px;
+    text-align: center;
+    color: #99919d;
+}
+
+.empty-members svg,
+.empty-members strong,
+.empty-members span {
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.empty-members svg {
+    color: #d83c83;
+}
+
+.empty-members strong {
+    color: #494250;
+    font-size: 14px;
+}
+
+.empty-members span {
+    font-size: 12px;
+}
+
+@media (max-width: 850px) {
+    .member-management-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .member-list-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .member-search {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .member-management {
+        padding: 40px 6%;
+    }
+
+    .member-form-section,
+    .member-list-section {
+        padding: 20px 15px;
+    }
+
+    .member-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .member-form-actions {
+        flex-direction: column;
+    }
+
+    .cancel-member-button,
+    .save-member-button {
+        width: 100%;
+    }
+}
